@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 100px;
+}
+
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* Menyusun elemen dalam baris */
+    gap: 20px;
+    /* Menambahkan jarak antara elemen */
+}
+
+.kolom-utama {
+    flex: 3;
+    /* Mengambil ruang lebih banyak */
+    background-color: #f4f4f4;
+    /* Warna latar belakang */
+    padding: 10px;
+    /* Menambahkan padding di dalam kolom utama */
+}
+
+.sidebar-satu,
+.sidebar-dua {
+    flex: 1;
+    /* Mengambil ruang lebih sedikit dari kolom utama */
+    background-color: #f9f9f9;
+    /* Warna latar belakang */
+    padding: 10px;
+    /* Menambahkan padding di dalam sidebar */
+}

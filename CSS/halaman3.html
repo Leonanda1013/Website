@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 3 - Soal Hewan</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .judul {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .navigation-box {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .navigation-box a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-box a:hover {
+            background-color: #007B9A;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="judul">Soal Tentang Hewan</h1>
+
+    <form action="submit_soal.html" method="post">
+        <label for="nama">Nama Anda:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="soal1">1. Apa nama hewan yang dapat terbang?</label>
+        <input type="text" id="soal1" name="soal1" required>
+
+        <label for="soal2">2. Sebutkan dua hewan yang hidup di air!</label>
+        <textarea id="soal2" name="soal2" rows="4" required></textarea>
+
+        <input type="submit" value="Kirim Jawaban">
+    </form>
+
+    <div class="navigation-box">
+        <a href="project.html">Kembali ke Hewan Darat</a>
+        <a href="hewanair.html">Ke Hewan Air</a>
+    </div>
+</body>
+
+</html>

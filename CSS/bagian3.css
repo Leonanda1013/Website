@@ -1,0 +1,26 @@
+h2 {
+    color: orange;
+    font-family: Trenuchet MS;
+    text-align: center;
+}
+
+.kotak {
+    width: 100px;
+    padding: 50px;
+    color: white;
+    margin: 10px;
+    background-color: orange;
+}
+
+#kotak {
+    width: 480px;
+    color: white;
+    background-color: blue;
+    padding: 50px;
+}
+
+body {
+    background: url(bunga2.jpg), url(download.jpg);
+    background-repeat: no-repeat, repeat;
+    color: white;
+}

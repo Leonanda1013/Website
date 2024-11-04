@@ -1,0 +1,10 @@
+body {
+    background: url('buna.jpg');
+    color: white;
+}
+
+/* body{
+    background-image: url('img/tree1.jpg'), url('img/field1.jpg);
+    background-repeat: no-repeat, repeat;
+    color: white;
+} */

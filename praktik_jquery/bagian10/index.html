@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+        var i = 0;
+
+        $(document).ready(function () {
+            $('.slidertitle, #slider img').hide(); // Menyembunyikan gambar dan judul
+            showNextImage(); // Menampilkan gambar pertama
+            setInterval(showNextImage, 3000); // Mengatur interval untuk menampilkan gambar berikutnya
+        });
+
+        function showNextImage() {
+            $('#slider img').eq(i).fadeIn(1100).delay(1100).fadeOut(1100); // Menampilkan gambar dengan efek fade
+            $('#title' + (i + 1)).fadeIn(1100).delay(1100).fadeOut(1100); // Menampilkan judul gambar
+
+            i++; // Meningkatkan indeks gambar
+            if (i >= 3) {
+                i = 0; // Mereset indeks setelah gambar terakhir
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="slider">
+        <img id="sliderImage1" src="img/gambar1.jpg" alt="Gambar 1">
+        <div class="slidertitle" id="title1">Gambar 1</div>
+        <img id="sliderImage2" src="img/gambar2.jpg" alt="Gambar 2">
+        <div class="slidertitle" id="title2">Gambar 2</div>
+        <img id="sliderImage3" src="img/gambar3.jpg" alt="Gambar 3">
+        <div class="slidertitle" id="title3">Gambar 3</div>
+    </div>
+</body>
+
+</html>
