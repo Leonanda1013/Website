@@ -3,7 +3,7 @@ require_once 'Crud.php';
 
 $crud = new Crud();
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $jabatan = $_POST['jabatan'];
     $keterangan = $_POST['keterangan'];
     $crud->create($jabatan, $keterangan);

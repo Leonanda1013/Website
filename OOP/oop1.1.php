@@ -1,9 +1,11 @@
 <?php
 //no 1.1
-class Car{
+class Car
+{
     public $brand;
 
-    public function startEngine(){
+    public function startEngine()
+    {
         echo "Engine started!";
     }
 }
@@ -16,5 +18,3 @@ $car2->brand = "Honda";
 
 $car1->startEngine();
 echo $car2->brand;
-
-
